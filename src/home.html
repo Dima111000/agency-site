@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/_head.htm',{
+	"title":"Главная"
+	})
+	<body>
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="page">
+                <section class="page__main main-page">
+                    <div class="main-page__container">
+                        <div class="main-page__content">
+                            <div class="main-page__item main-page-item left-item">
+                                <h6 class="main-page-item__pre-title">Modern Studio</h6>
+                                <h1 class="main-page-item__title">
+                                    We’re <span>Help</span> To Build Your Dream Project
+                                </h1>
+                                <div class="main-page-item__text">
+                                    <p>
+                                        Agency provides a full service range including technical skills, design, business understanding.
+                                    </p>
+                                </div>
+                                <div class="main-page-item__button-block">
+                                    <button type="button" class="main-page-item__button button"><span>how we work</span></button>
+                                    <a href="#" class="main-page-item__link">Contact Us</a>
+                                </div>
+                                <div class="main-page-item__comment-block main-page-comment-block">
+                                    <div class="main-page-comment-block__commentator-image-block">
+                                        <img src="@img/main-page/commentator.png" alt="Commentator" class="main-page-comment-block__commentator-image">
+                                    </div>
+                                    <div class="main-page-comment-block__content">
+                                        <div class="main-page-comment-block__comment">
+                                            <p>
+                                                Put themselves in the merchant's shoes
+                                            </p>
+                                        </div>
+                                        <div class="main-page-comment-block__commentator-name">
+                                            Meta Inc.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main-page__item main-page-item right-item">
+                                <div class="main-page-item__images-block main-page-images-block">
+                                    <div class="main-page-images-block__image-block">
+                                        <img src="@img/main-page/laptop.png" alt="Laptop" class="main-page-images-block__image">
+                                    </div>
+                                    <div class="main-page-images-block__image-block">
+                                        <img src="@img/main-page/female.png" alt="Female" class="main-page-images-block__image">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+			</main>
+			@@include('html/_footer.htm',{})
+		</div>
+		@@include('html/_popup.htm',{})
+		@@include('html/_js.htm',{})
+	</body>
+</html>

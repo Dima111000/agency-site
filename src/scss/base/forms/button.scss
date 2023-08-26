@@ -1,0 +1,42 @@
+//<BUTTONS (a.btn+tab)>
+// Снипет (HTML): btn
+
+.button {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+	@include adaptiveValue("padding-top", 17, 15);
+    @include adaptiveValue("padding-bottom", 17, 15);
+    @include adaptiveValue("padding-left", 34, 20);
+    @include adaptiveValue("padding-right", 34, 20);
+    background-color: #EF6D58;
+    border-radius: rem(6);
+    text-transform: uppercase;
+    font-weight: 900;
+    min-height: rem(48);
+    transition: all 0.45s ease 0s;
+
+    span {
+        transform: translate(0, rem(1));
+    }
+	@media (any-hover: hover) {
+		&:hover {
+            background-color: darken($color: #EF6D58, $amount: 7);
+		}
+	}
+	&._fw {
+		width: 100%;
+	}
+    &.button-border {
+        background-color: transparent;
+        border: rem(1) solid rgba($color: $mainColor, $alpha: 0.2957);
+
+        @media (any-hover: hover){
+            &:hover {
+                background-color: #EF6D58;
+                border: rem(1) solid #EF6D58;
+            }
+        }
+    }
+}
